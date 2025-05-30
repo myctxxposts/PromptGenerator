@@ -1,0 +1,5 @@
+{
+  "name": "Auto Prompt Generator",
+  "description": "A simple tool to help you generate creative and effective prompts for various purposes. Customize topic, style, action, and more to craft the perfect prompt without needing an API key.",
+  "requestFramePermissions": []
+}
