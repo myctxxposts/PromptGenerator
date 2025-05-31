@@ -115,8 +115,7 @@ const PromptGeneratorForm: React.FC<PromptGeneratorFormProps> = ({ onGenerate, i
 
   return (
     <form onSubmit={handleSubmit} className="space-y-0 bg-gray-800 p-6 md:p-8 rounded-xl shadow-2xl border border-gray-700">
-      <h2 className="text-2xl font-semibold text-indigo-300 mb-8 text-center">Structure Your Prompt Request</h2>
-      
+          
       {/* Section 1: AI Role */}
       <FormSectionTitle title="AI Role" />
       <TextInput
