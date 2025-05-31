@@ -1,4 +1,5 @@
 
+
 export enum PromptStyle {
   CREATIVE = "Creative",
   FORMAL = "Formal",
@@ -19,6 +20,7 @@ export enum PromptAction {
   CREATE_SCRIPT = "Create a script for a video about",
   ANALYZE = "Analyze the impact of",
   BRAINSTORM = "Brainstorm solutions for",
+  COMPOSE_EMAIL = "Compose an email about",
 }
 
 export enum PromptLength {
@@ -29,12 +31,23 @@ export enum PromptLength {
   EXTENSIVE = "extensive (a short essay)",
 }
 
+export enum PromptExamples {
+  YES = "Yes",
+  NO = "No",
+}
+
+// Removed PromptOutputFormat enum
+
 export interface PromptOptions {
-  topic: string;
+  topic: string; // Will now serve as the main "Input"
   style: PromptStyle;
-  action: PromptAction;
+  action: PromptAction; // Will be part of "Instructions"
   length: PromptLength;
-  keywords: string; // comma-separated
-  customInstructions?: string;
-  targetAudience?: string;
+  addExamples: PromptExamples;
+  keywords: string; // Will be part of "Context"
+  persona?: string; // Will be "AI Role"
+  customInstructions?: string; // Will be main part of "Instructions"
+  targetAudience?: string; // Will be part of "Context"
+  context?: string; // New field for "Context"
+  outputFormat?: string; // Changed to string for free-text input, optional
 }
