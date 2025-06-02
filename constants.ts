@@ -58,7 +58,6 @@ Ensure the summary is free of grammatical errors and typos.`,
 Key aspects for explanation:
 Define the core concept(s) clearly.
 Elaborate on important features, mechanisms, or components.
-Use examples or analogies to illustrate key points, if appropriate.
 Discuss any relevant implications, applications, or significance.
 
 Structure and Clarity:
